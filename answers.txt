@@ -1,0 +1,7 @@
+1. HTTP basic auth
+2. Basic is the default, though digest is also supported.
+3. Session auth stores authentication info server side. Token auth is not stored server side so it is more restful.
+4. After pressing "Log in with Google", the browser sends an authorization request to the resource owner specified by the app. That resource owner sends back an authorization grant.
+   The grant provided will tell the authorization server what the client will be authorized to access. The client sends this grant allong with authentication of its own identity to
+   the authorization server and asks for an access token. If both are valid, the server sends back an access token. The application then sends the access token to the resource server.
+   Finally, if the access token is valid then the resource server sends back the protected resouce.
